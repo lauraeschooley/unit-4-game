@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Emoji Collector</title>
+    <link rel="resetstylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Emoji Collector!</h1>
+    </div>
+
+    <div>
+        <h2>Instructions:</h2>
+
+        <p>You will start of with a random number.</p>
+
+        <p>There are four emoji buttons below. Each one has been assigned a random number. By clicking on one of the buttons, a specific amount of points will be added to your total.</p>
+
+        <p>The goal is to match your total to the toal that shown on the screen.</p>
+
+        <p>You wont know what point value each button holds until you click on it.</p>
+
+        <p>The value of the buttons changes each game.</p>
+    </div>
+
+    <div>
+        <h2>Number to guess:
+            <span id ="randomTarget"></span>
+        </h2>
+    </div>
+
+    <div class="usersTotalNumber">
+            <h2>Your Guess:
+                <span id = "usersGuess"></span>
+            </h2>    
+        </div>
+
+        <div class="emoji">
+
+            <img src="assets/images/1.png" class="emojiPic" id="emojiPicOne" alt="happy emoji">
+            <img src="assets/images/2.png" class="emojiPic" id="emojiPicTwo" alt="laughing emoji" >
+            <img src="assets/images/3.png" class="emojiPic" id="emojiPicThree" alt="annoyed emoji">
+            <img src="assets/images/4.png" class="emojiPic" id="emojiPicFour" alt="embarassed emoji">
+        </div>
+    
+
+    <div class="winsLosses">
+        <h2 id = "youWIN"></h2>
+        <h2>Wins:
+            <span id="winsNumber"></span>
+        </h2>
+        <h2>Losses:
+            <span id="lossesNumber"></span>
+        </h2>
+    </div>
+
+    
+</body>
+</html>
